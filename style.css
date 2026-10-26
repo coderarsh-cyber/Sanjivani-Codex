@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    color: white;
+    text-align: center;
+    overflow-x: hidden;
+
+    /* Animated dark gradient */
+    background: linear-gradient(-45deg, #020024, #090979, #000428, #004e92);
+    background-size: 400% 400%;
+    animation: bgAnimation 10s infinite alternate;
+}
+
+/* Background animation */
+@keyframes bgAnimation {
+    0% { background-position: left; }
+    100% { background-position: right; }
+}
+
+/* Navbar */
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.logo span {
+    color: cyan;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: cyan;
+}
+
+/* Hero Section */
+.hero {
+    margin-top: 80px;
+}
+
+.hero h1 {
+    font-size: 20px;
+    letter-spacing: 3px;
+}
+
+.hero h2 {
+    font-size: 50px;
+    margin: 10px 0;
+}
+
+.hero span {
+    color: cyan;
+}
+
+.hero p {
+    margin: 10px;
+    font-size: 18px;
+}
+
+.hero button {
+    margin-top: 20px;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 30px;
+    background: linear-gradient(45deg, cyan, purple);
+    color: white;
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+.hero button:hover {
+    transform: scale(1.1);
+}
+
+/* Friends Section */
+.friends {
+    margin-top: 100px;
+}
+
+.friends h2 {
+    margin-bottom: 30px;
+    font-size: 30px;
+}
+
+/* Grid */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    padding: 20px 50px;
+}
+
+/* Cards */
+.card {
+    padding: 30px;
+    border-radius: 15px;
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(10px);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+/* Circle (photo placeholder) */
+.circle {
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    border-radius: 50%;
+    border: 3px solid cyan;
+    margin-bottom: 15px;
+}
+
+
+/* Name */
+.card p {
+    font-size: 18px;
+}
+.insta-btn {
+    margin-top: 15px;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 30px;
+    background: linear-gradient(45deg, #E1306C, #FCAF45);
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
